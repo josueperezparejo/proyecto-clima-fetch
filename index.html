@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador Clima</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Footer -->
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <main class="d-flex justify-content-center flex-column align-items-center">
+            <h1 id="titulo" class="text-white text-center my-4">Busca el Clima</h1>
+            <div class="">
+                <div class="">
+                    <p class="text-white text-center">Preparados para el clima de hoy?</p>
+                    <div id="resultado"> </div>
+                </div>
+
+                <form id="formulario" class="" action="#" method="POST">
+                    <div class="">
+                        <input type="text" name="ciudad" id="ciudad" placeholder="Escribe tu Ciudad" class="form-control my-2" />
+                    </div>
+                    <div class="">
+                        <select class="form-control my-4" id="pais">
+                            <option disabled selected value="">-- Seleccionar Pais --</option>
+                            <option value="AR">Argentina</option>
+                            <option value="BO">Bolivia</option>
+                            <option value="BR">Brasil</option>
+                            <option value="CL">Chile</option>
+                            <option value="CO">Colombia</option>
+                            <option value="EC">Ecuador</option>
+                            <option value="ES">España</option>
+                            <option value="US">Estados Unidos</option>
+                            <option value="MX">México</option>
+                            <option value="PV">Paraguay</option>
+                            <option value="PE">Perú</option>
+                            <option value="UV">Uruguay</option>
+                            <option value="VE">Venezuela</option>
+                        </select>
+                    </div>
+
+                    <input type="submit" class="btn btn-primary" value="Obtener Clima" />
+                    <button type="reset" class="btn btn-danger">Limpiar</button>
+                </form>
+            </div>
+        </main>
+
+        <footer class="mb-4 pb-4">
+
+            <h2 class="text-center pt-4">Frontend Developer</h2>
+            <p class="text-center mx-auto col-md-7">Hola, soy <span class="fw-bold text-primary">Josué Pérez. </span>Me
+                especializo en la producción, diseño, planificación y organización de proyectos de desarrollo web.
+                Además, tengo conocimientos en varias <span class="fw-bold text-primary">tecnologías</span> relacionadas.</p>
+            <div class="d-flex justify-content-center">
+                <ul class="col-md-4 nav justify-content-center pb-3 mb-3 gap-1">
+                    <li class="nav-item hvr-float-shadow">
+                        <img loading="lazy" width="40" src="./assets/icons/html-5.png" alt="icon logo png html5">
+                    </li>
+                    <li class="nav-item hvr-float-shadow">
+                        <img loading="lazy" width="40" src="./assets/icons/css-3.png" alt="icon logo png css3">
+                    </li>
+                    <li class="nav-item hvr-float-shadow">
+                        <img loading="lazy" width="40" src="./assets/icons/js.png" alt="icon logo png javascript">
+                    </li>
+                    <li class="nav-item hvr-float-shadow">
+                        <img loading="lazy" width="40" src="./assets/icons/git.png" alt="icon logo png git">
+                    </li>
+                    <li class="nav-item hvr-float-shadow">
+                        <img loading="lazy" width="40" src="./assets/icons/nodo-js.png" alt="icon logo png nodo">
+                    </li>
+                    <li class="nav-item hvr-float-shadow">
+                        <img loading="lazy" width="40" src="./assets/icons/react-js.png" alt="icon logo png react">
+                    </li>
+                    <li class="nav-item hvr-float-shadow">
+                        <img loading="lazy" width="40" src="./assets/icons/bootstrap.png" alt="icon logo png bootstrap">
+                    </li>
+                </ul>
+            </div>
+
+            <p class="text-center">Pueden conocer mis proyectos en mi perfil de GitHub, LinkedIn y Twitch.</p>
+            <ul class="nav justify-content-center list-unstyled d-flex">
+                <li class="ms-3">
+                    <a class="text-muted hvr-icon-fade-git" target="_blank" href="https://github.com/josueperezparejo">
+                        <i class="fa-2xl fa-brands fa-github hvr-icon-git"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted hvr-icon-fade-linkedin" target="_blank"
+                        href="https://www.linkedin.com/in/josue-david-perez-parejo-769983161">
+                        <i class="fa-2xl fa-brands fa-linkedin-in hvr-icon-linkedin"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted hvr-icon-fade-twitch" target="_blank" href="https://www.twitch.tv/josuepp1997">
+                        <i class="fa-2xl fa-brands fa-twitch hvr-icon-twitch"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="./js/app.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/fc1e83c263.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
